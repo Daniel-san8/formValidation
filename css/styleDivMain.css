@@ -1,4 +1,8 @@
 .div-main {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-left: 3rem;
+  gap: 10px;
 }
