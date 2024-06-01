@@ -1,3 +1,9 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
 .label-email {
   font-weight: bolder;
   padding-top: 2rem;
