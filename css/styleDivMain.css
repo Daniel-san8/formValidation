@@ -11,5 +11,6 @@
   .div-main {
     display: grid;
     order: 2;
+    gap: 0;
   }
 }
