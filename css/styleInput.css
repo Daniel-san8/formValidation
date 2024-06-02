@@ -3,3 +3,7 @@
   border-radius: 7px;
   border: 1px solid #cccccc;
 }
+
+.input-email::placeholder {
+  color: #000000; /* Cor do seu placeholder */
+}
