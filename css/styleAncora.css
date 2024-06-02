@@ -18,3 +18,9 @@
   );
   box-shadow: 0 0 10px hsl(1, 85%, 67%);
 }
+
+@media (max-width: 400px) {
+  .ancora-button {
+    padding: 0.8rem 0.8rem;
+  }
+}
