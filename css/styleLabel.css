@@ -1,13 +1,25 @@
+@import url("styleDisplayNone.css");
+
 form {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  position: relative;
 }
 
 .label-email {
   font-weight: bolder;
   padding-top: 2rem;
   font-size: 0.8rem;
+}
+
+.label-email.after::after {
+  display: inline;
+  content: "Valid email required";
+  position: absolute;
+  right: 3px;
+  color: hsl(1, 100%, 67%);
+  font-weight: bolder;
 }
 
 @media (max-width: 616px) {
