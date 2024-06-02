@@ -5,5 +5,5 @@
   height: 90%;
   border-radius: 1.5rem;
   justify-content: space-around;
-  overflow: auto;
+  overflow: hidden;
 }

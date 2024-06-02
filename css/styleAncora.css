@@ -11,11 +11,10 @@
 }
 
 .ancora-button:hover {
-  transition: 10s;
   background-image: linear-gradient(
     to right,
     hsl(1, 85%, 67%),
     hsl(16, 100%, 65%)
   );
-  box-shadow: 0 0 3px hsl(1, 85%, 67%);
+  box-shadow: 0 0 10px hsl(1, 85%, 67%);
 }
