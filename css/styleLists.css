@@ -9,3 +9,10 @@
   align-items: center;
   gap: 1rem;
 }
+
+@media (max-width: 616px) {
+  .list {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+  }
+}

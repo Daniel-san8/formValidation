@@ -9,3 +9,12 @@ form {
   padding-top: 2rem;
   font-size: 0.8rem;
 }
+
+@media (max-width: 616px) {
+  .label-email {
+    padding-top: 1rem;
+  }
+  form {
+    gap: 0.4rem;
+  }
+}

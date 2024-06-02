@@ -4,4 +4,12 @@
   justify-content: center;
   height: 100%;
   gap: 4px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 710px) {
+  .div-main {
+    display: grid;
+    order: 2;
+  }
 }

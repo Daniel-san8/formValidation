@@ -7,7 +7,7 @@ export default function mudarImagem() {
 
     let tamanhoTela = window.innerWidth;
     const img = document.querySelector("[data-image]");
-    if (tamanhoTela <= 562) {
+    if (tamanhoTela <= 710) {
       img.setAttribute("src", imagens.imagemMobile);
     } else {
       img.setAttribute("src", imagens.imagemDesktop);
@@ -15,7 +15,7 @@ export default function mudarImagem() {
 
     addEventListener("resize", () => {
       tamanhoTela = innerWidth;
-      if (tamanhoTela <= 562) {
+      if (tamanhoTela <= 710) {
         img.setAttribute("src", imagens.imagemMobile);
       } else {
         img.setAttribute("src", imagens.imagemDesktop);

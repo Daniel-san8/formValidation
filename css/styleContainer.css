@@ -7,3 +7,13 @@
   justify-content: space-around;
   overflow: hidden;
 }
+
+@media (max-width: 710px) {
+  .container {
+    height: calc(90% + 280px);
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: visible;
+    justify-content: space-between;
+  }
+}

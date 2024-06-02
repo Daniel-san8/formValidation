@@ -2,3 +2,10 @@
   padding-bottom: 0.8rem;
   line-height: 1.4rem;
 }
+
+@media (max-width: 616px) {
+  .paragrafo-title {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+  }
+}
