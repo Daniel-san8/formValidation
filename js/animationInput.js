@@ -27,6 +27,8 @@ export default function animacaoFormOnChange() {
             inputElement.style.border = "1px solid hsl(4, 100%, 67%)";
             inputElement.classList.add("ativo-input");
             labelElement.classList.add("after");
+            buttonAncora.classList.remove("ativo");
+            buttonAncora.classList.add("desativado");
           }
         };
 
