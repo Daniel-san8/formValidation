@@ -34,6 +34,6 @@ export default function animacaoFormOnChange() {
 
         verificaEstado();
       });
-    }, 700);
+    }, 300);
   });
 }
