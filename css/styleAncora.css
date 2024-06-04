@@ -10,13 +10,19 @@
   font-size: 0.9rem;
 }
 
-.ancora-button:hover {
+.ancora-button.ativo:hover {
   background-image: linear-gradient(
     to right,
     hsl(1, 85%, 67%),
     hsl(16, 100%, 65%)
   );
   box-shadow: 0 0 10px hsl(1, 85%, 67%);
+}
+
+.ancora-button.desativado {
+  color: gray;
+  cursor: not-allowed;
+  background-color: #e0e0e0;
 }
 
 @media (max-width: 400px) {

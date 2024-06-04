@@ -4,6 +4,6 @@
   border: 1px solid #cccccc;
 }
 
-.input-email::placeholder {
-  color: 1; /* Cor do seu placeholder */
+.input-email.ativo-input::placeholder {
+  color: hsl(4, 100%, 67%);
 }
