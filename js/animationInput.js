@@ -1,7 +1,7 @@
 export default function animacaoFormOnChange() {
   const inputElement = document.querySelector("[data-input]");
-  const rgxEmail = /^\S+@\S+\.\S+$/;
   const labelElement = document.querySelector("[data-label]");
+  const rgxEmail = /^\S+@\S+\.\S+$/;
 
   inputElement.addEventListener("focus", () => {
     inputElement.style.outline = "none";
