@@ -1,4 +1,13 @@
 .title-new-page {
   font-size: 3rem;
   font-weight: bold;
+  line-height: 4rem;
+}
+
+.para-new-page {
+  line-height: 1.5rem;
+}
+
+.para-new-page strong {
+  font-weight: bold;
 }

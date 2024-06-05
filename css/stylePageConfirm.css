@@ -2,5 +2,27 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-row: auto;
-  gap: 1rem;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.ancora-button.new-page {
+  text-decoration: none;
+  padding: 1.2rem 1rem;
+  background-color: hsl(234, 29%, 20%);
+  margin-top: 0.8rem;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.ancora-button.new-page:hover {
+  background-image: linear-gradient(
+    to right,
+    hsl(1, 85%, 67%),
+    hsl(16, 100%, 65%)
+  );
+  box-shadow: 0 0 10px hsl(1, 85%, 67%);
 }

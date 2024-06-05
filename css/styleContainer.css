@@ -1,12 +1,23 @@
 .container {
+  width: 60%;
+  background-color: white;
+  display: flex;
+  height: 90%;
+  border-radius: 1.5rem;
+  justify-content: space-around;
+  overflow: hidden;
+  align-items: flex-start;
+}
+
+.container.new-page {
   width: 30%;
   background-color: white;
   display: flex;
   height: 62%;
   border-radius: 1.5rem;
-  justify-content: space-around;
-  overflow: hidden;
-  align-items: flex-start;
+  align-items: center;
+  padding: 3rem 2rem;
+  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 1200px) {

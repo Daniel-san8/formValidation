@@ -11,15 +11,27 @@
 
 <body>
     <div class="container" data-container>
-        <div class="div-page-confirm">
-            <img src="/appProject/images/icon-success.svg" alt="success">
-            <h1 class="title-new-page">Thanks for subscribing!</h1>
-            <p class="para-new-page">A confirmation email has been sent to <strong
-                    data-strongVariavel>teste@hotmail.com</strong>. Please Open
-                it and click the
-                button inside to confirm your subscription</p>
-            <a data-ancora href="#" class="ancora-button">Subscribe to monthly newsletter</a>
-        </div>
+        <main class="div-main" data-divmain>
+            <h1 class="title">Stay Updated!</h1>
+            <p class="paragrafo-title">Join 60,000+ product managers receiving monthly <br> updates on:</p>
+            <ul class="list">
+                <li class="item-list"><img src="/appProject/images/icon-list.svg" alt="success"
+                        class="success-benefits">Product discovery and building what matters</li>
+                <li class="item-list"><img src="/appProject/images/icon-list.svg" alt="success"
+                        class="success-benefits">Measuring to
+                    ensure updates are a sucess</li>
+                <li class="item-list"><img src="/appProject/images/icon-list.svg" alt="success"
+                        class="success-benefits">And much
+                    more!</li>
+            </ul>
+            <form data-form action="#" method="post"><label data-label for="email" class="label-email">Email
+                    address</label>
+                <input data-input type="email" required placeholder="email@company.com" id="email" autocomplete="email"
+                    class="input-email">
+                <a data-ancora href="#" class="ancora-button">Subscribe to monthly newsletter</a>
+            </form>
+        </main>
+        <img data-image src="/appProject/images/illustration-sign-up-desktop.svg" alt="illustration" class="image-main">
 
     </div>
     <script type="module" src="/appProject/js/geral.js"></script>
