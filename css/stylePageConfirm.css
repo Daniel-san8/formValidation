@@ -1,0 +1,6 @@
+.div-page-confirm {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: auto;
+  gap: 1rem;
+}

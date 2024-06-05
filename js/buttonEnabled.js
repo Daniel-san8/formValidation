@@ -1,5 +1,5 @@
 export default function buttonEnabled() {
-  const inputElement = document.querySelector("[data-input]");
+  const inputElementValue = document.querySelector("[data-input]");
   const containerElement = document.querySelector("[data-container]");
   const divMainElement = document.querySelector("[data-divmain]");
   const imgElement = document.querySelector("[data-image]");
@@ -10,6 +10,7 @@ export default function buttonEnabled() {
       if (buttonAncora.classList.contains("desativado")) {
         e.preventDefault();
       } else {
+        e.preventDefault();
         paginaValidation();
       }
     });

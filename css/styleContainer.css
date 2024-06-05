@@ -1,8 +1,8 @@
 .container {
-  width: 60%;
+  width: 30%;
   background-color: white;
   display: flex;
-  height: 90%;
+  height: 62%;
   border-radius: 1.5rem;
   justify-content: space-around;
   overflow: hidden;

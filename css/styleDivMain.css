@@ -1,5 +1,5 @@
 .div-main {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   height: 100%;

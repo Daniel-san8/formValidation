@@ -1,5 +1,5 @@
 .image-main {
-  display: flex;
+  display: none;
   height: 90%;
   align-self: center;
 }
