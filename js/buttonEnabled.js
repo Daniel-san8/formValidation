@@ -33,12 +33,4 @@ export default function buttonEnabled() {
     containerElement.style.width = "30%";
     containerElement.insertAdjacentHTML("beforeend", novaPagina);
   }
-
-  inputElement.addEventListener("keyup", (e) => {
-    inputElement.preventDefault();
-    let key = e.which || e.keyCode;
-    if (key === 13) {
-      paginaValidation();
-    }
-  });
 }
