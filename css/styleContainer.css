@@ -10,14 +10,13 @@
 }
 
 .container-new-page {
-  width: 30%;
+  width: 40%;
   background-color: white;
   display: flex;
   flex-direction: column;
-  height: 62%;
+  height: 70%;
   border-radius: 1.5rem;
   align-items: center;
-  padding: 3rem 2rem;
   font-family: "Roboto", sans-serif;
 }
 

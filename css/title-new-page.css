@@ -1,11 +1,12 @@
 .title-new-page {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  line-height: 4rem;
+  line-height: 2.5rem;
 }
 
 .para-new-page {
-  line-height: 1.5rem;
+  line-height: 1.2rem;
+  margin-top: 1rem;
 }
 
 .para-new-page strong {

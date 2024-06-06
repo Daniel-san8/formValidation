@@ -1,15 +1,16 @@
 .div-page-confirm {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   grid-template-columns: 1fr;
-  grid-row: auto;
-  gap: 1.5rem;
-  padding: 2rem;
+  padding-top: 1.2rem;
+}
+
+.div-page-confirm img {
+  height: 70%;
 }
 
 .ancora-button-new-page {
   text-decoration: none;
-  padding: 1.2rem 1rem;
+  padding: 1rem 2rem;
   background-color: hsl(234, 29%, 20%);
   margin-top: 0.8rem;
   border-radius: 8px;
