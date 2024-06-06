@@ -36,5 +36,8 @@ export default function buttonEnabled() {
     const containerElementNew = (document.querySelector(
       ".container-new-page"
     ).style.display = "flex");
+    const buttonNewPage = document.querySelector(".ancora-button-new-page");
+    buttonNewPage.innerHTML = "Dismiss message";
+    console.log(buttonNewPage);
   }
 }
