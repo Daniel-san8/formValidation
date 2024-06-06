@@ -17,9 +17,20 @@ export default function buttonEnabled() {
   });
 
   function paginaValidation() {
+    const novaPagina = `<div class="container-new-page" data-container>
+    <div class="div-page-confirm">
+        <img class="image-new-page" src="/appProject/images/icon-success.svg" alt="success">
+        <h1 class="title-new-page">Thanks for subscribing!</h1>
+        <p class="para-new-page">A confirmation email has been sent to <strong
+                data-strongVariavel>teste@hotmail.com</strong>. Please open
+            it and click <br> the
+            button inside to confirm your subscription</p>
+        <a data-ancora href="#" class="ancora-button-new-page">Subscribe to monthly newsletter</a>
+    </div>`;
     divMainElement.style.display = "none";
     imgElement.style.display = "none";
     containerElement.style.height = "62%";
     containerElement.style.width = "30%";
+    containerElement.insertAdjacentHTML("beforeend", novaPagina);
   }
 }

@@ -9,10 +9,11 @@
   align-items: flex-start;
 }
 
-.container.new-page {
+.container-new-page {
   width: 30%;
   background-color: white;
   display: flex;
+  flex-direction: column;
   height: 62%;
   border-radius: 1.5rem;
   align-items: center;

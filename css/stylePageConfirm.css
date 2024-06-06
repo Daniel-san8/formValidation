@@ -1,12 +1,13 @@
 .div-page-confirm {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-columns: 1fr;
   grid-row: auto;
   gap: 1.5rem;
   padding: 2rem;
 }
 
-.ancora-button.new-page {
+.ancora-button-new-page {
   text-decoration: none;
   padding: 1.2rem 1rem;
   background-color: hsl(234, 29%, 20%);
@@ -18,7 +19,7 @@
   font-size: 0.9rem;
 }
 
-.ancora-button.new-page:hover {
+.ancora-button-new-page:hover {
   background-image: linear-gradient(
     to right,
     hsl(1, 85%, 67%),
