@@ -50,8 +50,9 @@
   height: 55%;
   border-radius: 1.5rem;
   align-items: center;
+  justify-content: center;
   font-family: "Roboto", sans-serif;
-  padding: 0.6rem 1.5rem;
+  padding: 0.6rem 1.8rem;
 }
 
 @media (max-width: 730px) {

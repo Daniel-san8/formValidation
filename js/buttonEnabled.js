@@ -24,8 +24,8 @@ export default function buttonEnabled() {
         <p class="para-new-page">A confirmation email has been sent to <strong
                 data-strongVariavel>teste@hotmail.com</strong>. Please open
             it and click <br> the
-            button inside to confirm your subscription</p>
-        <a data-ancora href="#" class="ancora-button-new-page">Subscribe to monthly newsletter</a>
+            button inside to confirm your subscription.</p>
+        <a href="" class="ancora-button-new-page">Subscribe to monthly newsletter</a>
     </div>`;
 
     divMainElement.style.display = "none";
@@ -33,11 +33,23 @@ export default function buttonEnabled() {
     containerElement.style.display = "none";
     containerElement.style.width = "30%";
     bodyElement.insertAdjacentHTML("beforeend", novaPagina);
-    const containerElementNew = (document.querySelector(
-      ".container-new-page"
-    ).style.display = "flex");
+    const containerElementNew = document.querySelector(".container-new-page");
+    const divPage = document.querySelector(".div-page-confirm");
+    divPage.style.gap = "10px";
+    containerElementNew.style.display = "flex";
+    containerElementNew.style.gap = "100px";
     const buttonNewPage = document.querySelector(".ancora-button-new-page");
+    buttonNewPage.addEventListener("click", (e) => {
+      e.preventDefault();
+    });
+
+    buttonNewPage.addEventListener("click", dismissMessage);
+
     buttonNewPage.innerHTML = "Dismiss message";
     console.log(buttonNewPage);
+  }
+
+  function dismissMessage() {
+    console.log("oi");
   }
 }
