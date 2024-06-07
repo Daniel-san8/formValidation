@@ -1,10 +1,16 @@
 export default function animacaoFormOnChange() {
   const inputElement = document.querySelector("[data-input]");
   const labelElement = document.querySelector("[data-label]");
+  const formData = document.querySelector("[data-form]");
+
   const rgxEmail = /^\S+@\S+\.\S+$/;
 
   inputElement.addEventListener("focus", () => {
     inputElement.style.outline = "none";
+  });
+
+  formData.addEventListener("input", (e) => {
+    e.preventDefault();
   });
 
   //

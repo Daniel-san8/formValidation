@@ -5,6 +5,15 @@ export default function buttonEnabled() {
   const imgElement = document.querySelector("[data-image]");
   const inputValue = document.querySelector("[data-input]");
   const dataStrongVariavel = document.querySelector("[data-strongVariavel]");
+  const formData = document.querySelector("[data-form]");
+
+  formData.addEventListener("input", (e) => {
+    e.preventDefault();
+  });
+
+  inputValue.addEventListener("click", (e) => {
+    e.preventDefault();
+  });
 
   addEventListener("DOMContentLoaded", () => {
     const buttonAncora = document.querySelector("[data-ancora]");
@@ -35,6 +44,7 @@ export default function buttonEnabled() {
     imgElement.style.display = "none";
     containerElement.style.display = "none";
     containerElement.style.width = "30%";
+    containerElement.style.height = "100%";
     bodyElement.insertAdjacentHTML("beforeend", novaPagina);
 
     const containerElementNew = document.querySelector(".container-new-page");
@@ -65,6 +75,6 @@ export default function buttonEnabled() {
     imgElement.style.display = "flex";
     containerElement.style.display = "flex";
     containerElement.style.width = "60%";
-    containerElement.style.height = "90%";
+    containerElement.style.height = "100%";
   }
 }
