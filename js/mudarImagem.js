@@ -1,8 +1,8 @@
 export default function mudarImagem() {
   window.addEventListener("load", () => {
     const imagens = {
-      imagemMobile: "/appProject/images/illustration-sign-up-mobile.svg",
-      imagemDesktop: "/appProject/images/illustration-sign-up-desktop.svg",
+      imagemMobile: "./images/illustration-sign-up-mobile.svg",
+      imagemDesktop: "./images/illustration-sign-up-desktop.svg",
     };
 
     let tamanhoTela = window.innerWidth;

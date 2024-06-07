@@ -9,8 +9,9 @@ export default function animacaoFormOnChange() {
     inputElement.style.outline = "none";
   });
 
-  formData.addEventListener("input", (e) => {
+  formData.addEventListener("click", (e) => {
     e.preventDefault();
+    this.preventDefault();
   });
 
   //

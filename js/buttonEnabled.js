@@ -40,6 +40,11 @@ export default function buttonEnabled() {
         <a href="" class="ancora-button-new-page">Subscribe to monthly newsletter</a>
       </div>`;
 
+    inputValue.value = "";
+    const buttonAncora = document.querySelector("[data-ancora]");
+
+    buttonAncora.classList.add("desativado");
+
     divMainElement.style.display = "none";
     imgElement.style.display = "none";
     imgElement.style.overflow = "clip";
