@@ -72,9 +72,10 @@ export default function buttonEnabled() {
 
     // Restaura a visibilidade e o estilo dos elementos originais
     divMainElement.style.display = "flex";
-    imgElement.style.display = "flex";
+    imgElement.style.display = "grid";
+    imgElement.style.width = "100%";
     containerElement.style.display = "flex";
-    containerElement.style.width = "60%";
+    containerElement.style.width = "80%";
     containerElement.style.height = "100%";
   }
 }
