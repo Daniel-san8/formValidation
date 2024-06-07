@@ -78,7 +78,7 @@ export default function buttonEnabled() {
 
     divMainElement.style.display = "flex";
     imgElement.style.display = "flex";
-    imgElement.style.overflow = "visible";
+    imgElement.style.overflow = "hidden";
     containerElement.style.display = "flex";
     containerElement.style.width = "auto";
     containerElement.style.height = "auto";
@@ -86,19 +86,12 @@ export default function buttonEnabled() {
     containerElement.style.alignItems = "";
 
     // Cria um objeto MediaQueryList
-    const mediaQuery = window.matchMedia("(min-width: 800px)");
+    const mediaQuery = window.matchMedia("(max-width: 565px)").matches;
 
-    function handleMediaQueryChange(e) {
-      if (e.matches) {
-        containerElement.style.display = "grid";
-        containerElement.style.gridTemplateColumns = "1fr";
-      }
+    if (mediaQuery) {
+      containerElement.style.display = "grid";
+      containerElement.style.gridTemplateColumns = "1fr";
+      imgg.style.gridColumn = "1";
     }
-
-    // Adiciona o ouvinte de eventos
-    mediaQuery.addEventListener(handleMediaQueryChange);
-
-    // Chama a função imediatamente para verificar a consulta de mídia
-    handleMediaQueryChange(mediaQuery);
   }
 }
