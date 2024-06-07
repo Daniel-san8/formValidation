@@ -81,7 +81,9 @@ export default function buttonEnabled() {
     imgElement.style.display = "grid";
     imgElement.style.width = "100%";
     containerElement.style.display = "flex";
-    containerElement.style.width = "80%";
+    containerElement.style.width = "70%";
+    containerElement.style.justifyContent = "center";
+    containerElement.style.alignItems = "center";
     containerElement.style.height = "100%";
   }
 }
