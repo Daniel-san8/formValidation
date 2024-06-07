@@ -42,6 +42,7 @@ export default function buttonEnabled() {
 
     divMainElement.style.display = "none";
     imgElement.style.display = "none";
+    imgElement.style.overflow = "clip";
     containerElement.style.display = "none";
     containerElement.style.width = "30%";
     containerElement.style.height = "100%";
