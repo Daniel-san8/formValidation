@@ -76,15 +76,29 @@ export default function buttonEnabled() {
       containerElementNew.parentNode.removeChild(containerElementNew);
     }
 
-    // Restaura a visibilidade e o estilo dos elementos originais
-    divMainElement.style.display = "flex"; // ou o display original
-    imgElement.style.display = "flex"; // ou o display original
-    imgElement.style.overflow = "visible"; // ou o overflow original
-    containerElement.style.display = "flex"; // ou o display original
-    containerElement.style.width = "auto"; // ou a largura original
-    containerElement.style.height = "auto"; // ou a altura original
-    // Remova quaisquer estilos adicionais que possam ter sido aplicados
+    divMainElement.style.display = "flex";
+    imgElement.style.display = "flex";
+    imgElement.style.overflow = "visible";
+    containerElement.style.display = "flex";
+    containerElement.style.width = "auto";
+    containerElement.style.height = "auto";
     containerElement.style.justifyContent = "";
     containerElement.style.alignItems = "";
+
+    // Cria um objeto MediaQueryList
+    const mediaQuery = window.matchMedia("(min-width: 800px)");
+
+    function handleMediaQueryChange(e) {
+      if (e.matches) {
+        containerElement.style.display = "grid";
+        containerElement.style.gridTemplateColumns = "1fr";
+      }
+    }
+
+    // Adiciona o ouvinte de eventos
+    mediaQuery.addEventListener(handleMediaQueryChange);
+
+    // Chama a função imediatamente para verificar a consulta de mídia
+    handleMediaQueryChange(mediaQuery);
   }
 }
