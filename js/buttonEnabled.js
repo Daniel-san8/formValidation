@@ -77,13 +77,14 @@ export default function buttonEnabled() {
     }
 
     // Restaura a visibilidade e o estilo dos elementos originais
-    divMainElement.style.display = "flex";
-    imgElement.style.display = "grid";
-    imgElement.style.width = "100%";
-    containerElement.style.display = "flex";
-    containerElement.style.width = "70%";
-    containerElement.style.justifyContent = "center";
-    containerElement.style.alignItems = "center";
-    containerElement.style.height = "100%";
+    divMainElement.style.display = "flex"; // ou o display original
+    imgElement.style.display = "flex"; // ou o display original
+    imgElement.style.overflow = "visible"; // ou o overflow original
+    containerElement.style.display = "flex"; // ou o display original
+    containerElement.style.width = "auto"; // ou a largura original
+    containerElement.style.height = "auto"; // ou a altura original
+    // Remova quaisquer estilos adicionais que possam ter sido aplicados
+    containerElement.style.justifyContent = "";
+    containerElement.style.alignItems = "";
   }
 }
