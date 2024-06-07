@@ -31,7 +31,7 @@ export default function buttonEnabled() {
   function paginaValidation() {
     const novaPagina = `<div class="container-new-page">
       <div class="div-page-confirm">
-        <img class="image-new-page" src="/appProject/images/icon-success.svg" alt="success">
+        <img class="image-new-page" src="./images/icon-success.svg" alt="success">
         <h1 class="title-new-page">Thanks for subscribing!</h1>
         <p class="para-new-page">A confirmation email has been sent to <strong
                 data-strongVariavel>${inputValue.value}</strong>. Please open
